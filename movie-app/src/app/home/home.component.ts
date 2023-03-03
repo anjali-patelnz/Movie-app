@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,7 @@ export class HomeComponent implements OnInit{
   popularMovies: any;
 
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router) {}
 
   ngOnInit():void {
     this.getTrendingMovies();
@@ -43,5 +44,10 @@ export class HomeComponent implements OnInit{
       this.popularMovies = movies;
       console.log(this.popularMovies);
     })
+  }
+
+  goToMovie(type:string, id: string){
+    this.router.navigate(['movie', type, id]);
+
   }
 }
