@@ -36,7 +36,9 @@
         <div class="review-details">
           <div class="review-left">
             <div class="author">{{ review.author }}</div>
-            <div class="author_date">{{ review.published_on }}</div>
+            <div class="author-date">
+              {{ review.published_on | date: "dd-MMM-YYYY" }}
+            </div>
           </div>
           <div class="review-right">
             <div class="rating">{{ review.rating }}</div>
