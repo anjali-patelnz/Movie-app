@@ -49,5 +49,23 @@
     min-height: calc(100vh - 80px);
     padding: 20px 40px;
     font-family: "Roboto", sans-serif;
+    h4 {
+      text-transform: uppercase;
+      font-weight: bold;
+      border-left: 5px solid lightseagreen;
+      padding-left: 10px;
+    }
+    .movies {
+      .movie {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .name {
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }

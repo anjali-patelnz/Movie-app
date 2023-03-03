@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit{
 
   trendingMovies: any;
   theatreMovies: any;
+  popularMovies: any;
 
 
   constructor(private http: HttpClient) {}
@@ -17,6 +18,7 @@ export class HomeComponent implements OnInit{
   ngOnInit():void {
     this.getTrendingMovies();
     this.getTheatreMovies();
+    this.getPopularMovies();
   }
 
   getTrendingMovies() {
@@ -32,6 +34,14 @@ export class HomeComponent implements OnInit{
     .subscribe((movies) => {
       this.theatreMovies = movies;
       console.log(this.theatreMovies);
+    })
+  }
+
+  getPopularMovies() {
+    this.http.get('http://localhost:4200/assets/data/popular-movies.json')
+    .subscribe((movies) => {
+      this.popularMovies = movies;
+      console.log(this.popularMovies);
     })
   }
 }

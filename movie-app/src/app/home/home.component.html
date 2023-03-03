@@ -36,5 +36,13 @@
       </div>
     </div>
   </div>
-  <div class="popular-movies"></div>
+  <div class="popular-movies">
+    <h4>All Time Popular</h4>
+    <div class="movies">
+      <div class="movie" *ngFor="let movie of popularMovies">
+        <div class="name">{{ movie.name }}</div>
+        <div class="rating">{{ movie.rating }}</div>
+      </div>
+    </div>
+  </div>
 </div>
