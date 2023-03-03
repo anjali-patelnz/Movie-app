@@ -20,6 +20,8 @@ export class LoginComponent implements OnInit {
       this.errorMsg = "Username is required";
     } else if (this.password.trim().length === 0) {
       this.errorMsg = "Password is required";
+    } else {
+      this.errorMsg = "";
     }
 
   }
