@@ -25,4 +25,20 @@
     text-align: right;
     width: 1200px;
   }
+  .login-form {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    .form-group {
+      margin-top: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+  }
 }
