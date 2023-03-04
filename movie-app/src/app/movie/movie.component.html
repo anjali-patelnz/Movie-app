@@ -3,7 +3,9 @@
   <div class="top">
     <div class="left">
       <div class="name">{{ movie?.name }}</div>
-      <div class="rating">{{ movie?.rating }}</div>
+      <div class="rating">
+        {{ movie?.rating }} <span class="star">⭐️</span>
+      </div>
       <div class="cover">
         <img [src]="movie.cover" alt="" />
       </div>
