@@ -1,7 +1,6 @@
 .home-container {
   display: flex;
   .all-movies {
-    width: 75%;
     min-height: calc(100vh - 80px);
     border-right: 1px solid lightseagreen;
     padding: 20px 40px;
@@ -30,6 +29,7 @@
       .movie {
         .cover {
           cursor: pointer;
+          margin: 2px;
           img {
             border-radius: 5px;
           }
