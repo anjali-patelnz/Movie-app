@@ -15,7 +15,9 @@
             <div class="name" (click)="goToMovie('trending', movie.id)">
               {{ movie.name }}
             </div>
-            <div class="rating">{{ movie.rating }}</div>
+            <div class="rating">
+              Rating: {{ movie.rating }}<span class="star">⭐️</span>
+            </div>
           </div>
         </div>
       </div>
@@ -34,7 +36,9 @@
             <div class="name" (click)="goToMovie('theatre', movie.id)">
               {{ movie.name }}
             </div>
-            <div class="rating">{{ movie.rating }}</div>
+            <div class="rating">
+              Rating: {{ movie.rating }} <span class="star">⭐️</span>
+            </div>
           </div>
         </div>
       </div>
@@ -47,7 +51,9 @@
         <div class="name" (click)="goToMovie('popular', movie.id)">
           {{ movie.name }}
         </div>
-        <div class="rating">{{ movie.rating }}</div>
+        <div class="rating">
+          {{ movie.rating }} <span class="star">⭐️</span>
+        </div>
       </div>
       <div class="view-all">View All</div>
     </div>
