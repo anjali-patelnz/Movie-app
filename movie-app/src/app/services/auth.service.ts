@@ -9,7 +9,7 @@ export class AuthService {
   constructor(private router: Router) { }
 
   login(username:string, password:string){
-    if (username  === 'anji' && password === '1234') {
+    if (username  === 'username' && password === 'password') {
       return 200;
     } else {
       return 403;
